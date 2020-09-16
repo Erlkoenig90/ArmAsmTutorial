@@ -27,7 +27,7 @@ SECTIONS {
 	
 	_DataLoad = LOADADDR(.data);
 	
-	.bss : {
+	.bss (NOLOAD) : {
 		_BssStart = .;
 		*(.bss);
 		. = ALIGN(4);
